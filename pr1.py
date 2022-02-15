@@ -16,3 +16,7 @@ print(0o52 == 42)  # oct int
 print(0x2a == 42)  # hex int
 
 # пасхалки - https://tproger.ru/devnull/python-easter-eggs/
+
+x=0
+for i in range (0,4294967295):
+    x += 4294967295

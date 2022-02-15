@@ -1,33 +1,41 @@
-def g1(x):
-    return x + x
+def f_12_4(x):
+    x += x
+    x += x + x
+    x += x
+    return x
 
 
-# Умножение на 12. 4 сложения.
-def f1(x):
-    return g1(x) + g1(x) + g1(g1(x)) + g1(g1(x))
+def f_16_4(x):
+    x += x
+    x += x
+    x += x
+    x += x
+    return x
 
 
-def g3(x):
-    return x + x + x
+def f_15_3_2(x):
+    y = x
+    x = x + x
+    x = x + x
+    x = x + x
+    y = y - x
+    x = x - y
+    return x
 
 
-# Умножение на 16. 4 сложения.
-def f2(x):
-    return g1(g1(g1(x))) + g1(g1(x)) + g1(g1(x))
+def f_29_6_1(x):
+    a = x + x
+    x = a + x
+    a += a
+    a += a
+    a += a
+    a += a
+    a = a - x
+    return a
 
 
-# Умножение на 15. 3 сложения и 2 вычитания.
-def f3(x):
-    a1 = g1(g1(g1(g1(g1(x))))) - g3(g3(x))
-    a3 = g1(g1(g1(x)))
-    return a1 - a3
+print(f_12_4(2))
+print(f_16_4(2))
+print(f_15_3_2(2))
+print(f_29_6_1(2))
 
-
-# Умножение на 29. 6 сложений и одно вычитание.
-def f4(x):
-    return g1(g1(g1(x))) + g1(g1(g1(x))) + g1(g1(g1(x))) + g1(g1(g1(x))) - g3(x)
-
-
-print(f1(2))
-print(f2(2))
-print(f3(2))

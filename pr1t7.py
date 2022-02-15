@@ -1,0 +1,5 @@
+print(eval(repr(0.3)))
+print(format(0.3, '.17f'))
+print(format(0.6, '.17f'))
+print(format(0.9, '.17f'))
+print(format(0.3 + 0.6, '.17f'))
