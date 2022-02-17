@@ -1,5 +1,5 @@
 
- e = 'Нет - ****** ответ!  # переменные не могут начинаться с чисел.  SyntaxError: cannot assign to literal
+# e = 'Нет - ****** ответ!  # переменные не могут начинаться с чисел.  SyntaxError: cannot assign to literal
 
 # print"j"    # SyntaxError: invalid syntax
 
