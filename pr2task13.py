@@ -1,6 +1,4 @@
 import os
-# Написать утилиту командной строки, формирующую дерево каталогов и файлов с учетом вложенности и начиная с заданного
-# пути. Результат должен быть выдан в виде текста в формате graphviz.
 def recursive_directories():
     for dir_path, dir_names, filenames in os.walk(os.getcwd()):
         print("Files->")

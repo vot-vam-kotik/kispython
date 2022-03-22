@@ -1,4 +1,9 @@
-def lengths(table):
+# Существует модуль tabulate для вывода ASCII-таблиц.
+# Это большой модуль и для практических задач было бы удобно иметь простую
+# функцию в несколько строк, форматирующую данные с помощью ASCII-графики. Реализуйте эту функцию.
+# Проверьте результат на одном из примеров из репозитория tabulate
+
+def lengths(table): # Самое длинное слово в каждой строке
     ans = []
     for c in range(len(table[0])):
         ans.append(len(max([row[c] for row in table], key=lambda x: len(x))))
@@ -10,7 +15,7 @@ def fill_blanks(table, l):
     return table
 
 
-def tabulate(table):
+def tabulate_grid(table): # формирование таблицы
     l = lengths(table)
     table = fill_blanks(table, l)
     line = '+'
@@ -23,9 +28,9 @@ def tabulate(table):
         print(line)
 
 
-t1 = [('Alexa', 'Nana', 'Nana', 'Anna'),
-      ('Nana', 'Alexa', 'Anna', 'Nana'),
-      ('Nana', 'Anna', 'Alexa', 'Nana'),
-      ('Anna', 'Nana', 'Sasha', 'Alexa')]
+t1 = [('Masha', 'Nika', 'Nikita', 'Alena'),
+      ('Nana', 'Alex', 'Roma', 'Andrew'),
+      ('Yan', 'Anna', 'Arina', 'Ann'),
+      ('Bob', 'Steve', 'Klark', 'Alan')]
 
-tabulate(t1)
+tabulate_grid(t1)

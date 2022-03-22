@@ -2,17 +2,17 @@ def replacing(text):
     text = list(text)
     # print(text)
     quotes = []
-    for i in range(len(text)):
+    for i in range(len(text)): #все кавычки
         if text[i] == "\"" or text[i] == "\'":
             quotes.append(i)
-    # print(quotes)
+    print(quotes)
 
-    for left_kav in quotes[0:-1:2]:
+    for left_kav in quotes[0:-1:2]: # замена левых
         text[left_kav] = "«"
 
-    # print(quotes[1::2])
+    print(quotes[1::2]) # парные к предыдущей кавычки
 
-    for right_kav in quotes[1::2]:
+    for right_kav in quotes[1::2]: # замена правых
         text[right_kav] = "»"
 
     text = ''.join(text)
