@@ -41,18 +41,9 @@ def func_print(*args, sep=" ", end="\n"):
 def func_named_args(**args):
     return args
 
-# Изучите, как работает функция zip()
-def learn_zip():
-    a = [86, 52, 4]
-    b = [1.7, 0.0, -1.7]
-    c = ["task", "python", "zip"]
-    zipped = zip(a, b, c)
-    return list(zipped)  # список из кортежей
-
 
 if __name__ == '__main__':
     print(generate_groups())
-    print(learn_zip())
     print(economy_generator())
 
     # сравнение собственного print и встроенного
@@ -61,3 +52,5 @@ if __name__ == '__main__':
 
     # func_named_args(55) # Выдает TypeError: func_named_args() takes 0 positional arguments but 1 was given
     func_named_args(num = 55)
+
+

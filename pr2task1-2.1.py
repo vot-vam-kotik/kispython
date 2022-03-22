@@ -37,6 +37,7 @@ if __name__ == '__main__':
     assert sum_even_index([2, 1, 2, 1, 2, 1, 2]) == 8
     assert find_max_len_elem(['0.49', '0.54', '0.54', '0.55', '0.55555', '0.54', '0.55', '0.55', '0.54']) == '0.55555'
 
-i = 0
+i = 1
 #['much', 'code', 'wow'][i] - было
-'muchcodewow'[:i + 4]
+
+print('mucucocewhw'[::i+3])
