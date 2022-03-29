@@ -1,0 +1,19 @@
+------------------------------
+CLASS:    	Calculator
+
+TRACEBACK:	Traceback (most recent call last):
+  File "C:\main\Study\Python\kispython\Pract3\pr3task6\my_package\my_module.py", line 11, in wrapper
+    a = method(*args, **kwargs)
+ZeroDivisionError: division by zero
+
+ERROR:    	division by zero
+------------------------------
+CLASS:    	Joiner
+
+TRACEBACK:	Traceback (most recent call last):
+  File "C:\main\Study\Python\kispython\Pract3\pr3task6\my_package\my_module.py", line 11, in wrapper
+    a = method(*args, **kwargs)
+TypeError: can only concatenate str (not "int") to str
+
+ERROR:    	can only concatenate str (not "int") to str
+------------------------------
